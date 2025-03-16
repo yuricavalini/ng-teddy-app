@@ -3,6 +3,12 @@
   "ignorePatterns": ["projects/**/*"],
   "overrides": [
     {
+      "files": ["*.js"],
+      "parserOptions": {
+        "ecmaVersion": 2020
+      }
+    },
+    {
       "files": ["*.ts"],
       "plugins": ["unused-imports", "simple-import-sort"],
       "extends": [
@@ -53,14 +59,11 @@
         "prettier/prettier": ["error", { "parser": "angular" }]
       }
     },
-        {
-          "files": ["*.json"],
-          "parser": "jsonc-eslint-parser",
-          "extends": [
-            "eslint:recommended",
-            "plugin:jsonc/recommended-with-jsonc"
-          ],
-          "rules": {}
-        }
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "extends": ["eslint:recommended", "plugin:jsonc/recommended-with-jsonc"],
+      "rules": {}
+    }
   ]
 }
