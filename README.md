@@ -163,4 +163,4 @@ Principais ferramentas utilizadas na construção do projeto:
 
 Este projeto está licenciado sob a licença [MIT](./LICENSE).
 
-Feito com ❤️ por Yuri Cavalini 👋🏻 [Contact me!](https://www.linkedin.com/in/yuricavalini/)
+Feito com ❤️ por Yuri Cavalini 👋🏻 [Fale comigo!](https://www.linkedin.com/in/yuricavalini/)
