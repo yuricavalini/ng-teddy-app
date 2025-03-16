@@ -8,8 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
     "commit": "npx cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pretty-quick:staged": "npx pretty-quick --staged --pattern '**/*.{js,jsx,ts,tsx,html,css,scss,json,md}' --verbose",
+    "prettier:write": "npx prettier --write '**/*.{js,jsx,ts,tsx,html,css,scss,json,md}'"
   },
   "config": {
     "commitizen": {
@@ -54,6 +57,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.5.3",
     "prettier-eslint": "^16.3.0",
+    "pretty-quick": "^4.1.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "8.26.0"
   }
