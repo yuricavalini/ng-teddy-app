@@ -80,7 +80,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas em s
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) (Node.js versão 20.15.0 é o ideal).
 Também é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
-#### Rodando a aplicação web (Frontend)
+#### Rodando a aplicação web
 
 ```bash
 
@@ -106,7 +106,7 @@ $ npx ng serve ou ng serve
 
 # Instale o docker, crie uma conta no dockerhub e faça login pelo terminal
 
-# Baixe a imagem Docker
+# Baixe a imagem Docker (https://hub.docker.com/r/yuriwlc/ng-teddy-app-docker)
 docker pull yuriwlc/ng-teddy-app-docker
 
 # Rodando a aplicação docker
