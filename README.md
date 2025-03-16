@@ -1,59 +1,166 @@
-# NgTeddyApp
+# [NgTeddyApp - https://ng-teddy-app.vercel.app/](https://ng-teddy-app.vercel.app/)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 19.2.3.
 
-## Development server
+<h1 align="center">
+  <img alt="Ng-Teddy-App-Login" title="Ng-Teddy-App-Login" src="./assets/login.png" />
+</h1>
 
-To start a local development server, run:
+<h4 align="center">
+  
+  <a href="https://github.com/yuricavalini/ng-teddy-app">
+    NgTeddyApp - Concluído 🚀
+  </a>
+</h4>
+
+<p align="center">
+ <a href="#sobre-o-projeto">Sobre</a> •
+ <a href="#funcionalidades">Funcionalidades</a> •
+ <a href="#layout">Layout</a> •
+ <a href="#como-rodar-a-aplicacao">Como rodar a aplicação</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#autor">Autor</a> •
+ <a href="#licença">Licença</a>
+</p>
+
+## Sobre o projeto
+
+Este projeto é um sistema de gerenciamento de clientes, desenvolvido com foco na simplicidade e eficiência. Ele permite que os usuários realizem as seguintes operações essenciais:
+
+- Buscar por clientes: facilita a pesquisa e visualização de informações de clientes cadastrados no sistema.
+- Criar/cadastrar clientes: permite o registro de novos clientes no banco de dados.
+- Editar clientes: oferece a capacidade de editar informações de clientes existentes.
+- Excluir clientes: usuários podem remover clientes do sistema quando necessário.
+- Selecionar e remover clientes da lista geral: fornece a funcionalidade para selecionar clientes e removê-los da lista principal de forma rápida.
+- Login: sistema de autenticação simples para garantir que apenas usuários autorizados acessem as funcionalidades do sistema.
+
+O projeto foi desenvolvido com uma interface intuitiva, garantindo uma experiência de usuário fluída e sem complicações.
+
+---
+
+## Funcionalidades
+
+- [x] Usuários podem:
+  - [x] Buscar por clientes;
+  - [x] Criar/cadastrar clientes;
+  - [x] Editar clientes;
+  - [x] Excluir clientes;
+  - [x] Selecionar e remover clientes da lista geral de clientes;
+  - [x] Realizar login.
+
+---
+
+## Layout
+
+O layout da aplicação está disponível no Figma:
+
+<a href="https://www.figma.com/design/HIy3zEOdvNhK4ysAdNSKXR/Teste-Front-End-Desktop---Teddy?node-id=2-466&p=f&t=RsLJCqDgYEZJUqPw-0">
+  <img alt="Made by Yuri Cavalini" src="https://img.shields.io/badge/Access%20layout-Figma-brightgreen" />
+</a>
+
+### Web
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+  <img alt="Ng-Teddy-App" title="Ng-Teddy-App" src="./assets/clientes-lista.png" />
+</div>
+
+### Backend
+
+- Acesse: <https://boasorte.teddybackoffice.com.br/docs>
+
+---
+
+## Como rodar a aplicação
+
+Este é um projeto frontend.
+
+### Pré-requisito
+
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) (Node.js versão 20.15.0 é o ideal).
+Também é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+
+#### Rodando a aplicação web (Frontend)
 
 ```bash
-ng serve
+
+# Clone este repositório
+$ git clone https://github.com/yuricavalini/ng-teddy-app
+
+# Accesse a pasta do projeto em seu terminal
+$ cd ng-teddy-app
+
+# Instale as dependências
+$ npm install
+
+# Abra o terminal e execute o servidor em modo de desenvolvimento
+$ npx ng serve ou ng serve
+
+# A aplicação irá abrir na port:4200 - vá para http://localhost:4200
+
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+#### Rodando a aplicação com imagem Docker
 
 ```bash
-ng generate component component-name
+
+# Instale o docker, crie uma conta no dockerhub e faça login pelo terminal
+
+# Baixe a imagem Docker
+docker pull yuriwlc/ng-teddy-app-docker
+
+# Rodando a aplicação docker
+docker run -p 4200:4200 yuriwlc/ng-teddy-app-docker
+
+# A aplicação irá abrir na port:4200 - vá para http://localhost:4200
+
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Tecnologias
 
-## Building
+Principais ferramentas utilizadas na construção do projeto:
 
-To build the project run:
+#### **Website** ([Angular 19.2.3](https://angular.dev/) + [TypeScript](https://www.typescriptlang.org/))
 
-```bash
-ng build
-```
+> See the full file [package.json](https://github.com/yuricavalini/ng-teddy-app/blob/master/package.json)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Utilidades**
 
-## Running unit tests
+- Protótipo: **[Figma](https://www.figma.com/)** → **[Protótipo (Ng-Teddy-App)](https://www.figma.com/design/HIy3zEOdvNhK4ysAdNSKXR/Teste-Front-End-Desktop---Teddy?node-id=2-466&p=f&t=RsLJCqDgYEZJUqPw-0")**
+- Padronização de projeto e código: **[Eslint](https://eslint.org/)** - **[Commitizen](https://www.npmjs.com/package/commitizen)** - **[Commitlint](https://commitlint.js.org/)** - **[Husky](https://typicode.github.io/husky/#/)** - **[Lint-staged](https://github.com/okonet/lint-staged)** - **[EditorConfig](https://editorconfig.org/)**
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## Autor
 
-## Running end-to-end tests
+<div align="center">
+  <a href="https://github.com/yuricavalini">
+  <img style="border-radius: 50%;" src="https://github.com/yuricavalini.png" width="100px;" alt="Avatar"/>
+  <br />
+  <sub><b>Yuri Cavalini</b></sub></a> <a href="https://github.com/yuricavalini" title="Yuri Cavalini">🚀</a>
+  <br />
+  </a>
+</div>
+<br />
+<div align="center">
+  <a title="yuricavalini@gmail.com" href="mailto:yuricavalini@gmail.com?subject=Contact" target="_blank">
+    <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail" alt="Gmail" />
+  </a>
+  <a href="https://discordapp.com/users/9585" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
+  <a href="https://linkedin.com/in/yuricavalini" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin" alt="Linkedin" />
+  </a>
+</div>
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## Licença
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Este projeto está licenciado sob a licença [MIT](./LICENSE).
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feito com ❤️ por Yuri Cavalini 👋🏻 [Contact me!](https://www.linkedin.com/in/yuricavalini/)
