@@ -1,5 +1,6 @@
 import { registerLocaleData } from '@angular/common';
 import {
+  HTTP_INTERCEPTORS,
   provideHttpClient,
   withFetch,
   withInterceptorsFromDi,
@@ -7,6 +8,7 @@ import {
 import localePt from '@angular/common/locales/pt';
 import {
   ApplicationConfig,
+  importProvidersFrom,
   LOCALE_ID,
   provideZoneChangeDetection,
 } from '@angular/core';
@@ -15,6 +17,9 @@ import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideToastr } from 'ngx-toastr';
 
 import { APP_ROUTES } from './app.routes';
+import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
+import { LoadingService } from './shared/services/loading.service';
+
 registerLocaleData(localePt);
 
 export const appConfig: ApplicationConfig = {
@@ -25,5 +30,11 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch(), withInterceptorsFromDi()),
     provideAnimations(),
     provideToastr(),
+    importProvidersFrom(LoadingService),
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingInterceptor,
+      multi: true,
+    },
   ],
 };
