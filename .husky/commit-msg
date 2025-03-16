@@ -1,0 +1,6 @@
+echo "[INIT] - Running commitlint..."
+npx --no -- commitlint --edit $1 --verbose
+echo " "
+echo "[DONE]"
+
+echo " "
