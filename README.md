@@ -129,7 +129,7 @@ Principais ferramentas utilizadas na construção do projeto:
 **Utilidades**
 
 - Protótipo: **[Figma](https://www.figma.com/)** → **[Protótipo (Ng-Teddy-App)](https://www.figma.com/design/HIy3zEOdvNhK4ysAdNSKXR/Teste-Front-End-Desktop---Teddy?node-id=2-466&p=f&t=RsLJCqDgYEZJUqPw-0")**
-- Padronização de projeto e código: **[Eslint](https://eslint.org/)** - **[Commitizen](https://www.npmjs.com/package/commitizen)** - **[Commitlint](https://commitlint.js.org/)** - **[Husky](https://typicode.github.io/husky/#/)** - **[Lint-staged](https://github.com/okonet/lint-staged)** - **[EditorConfig](https://editorconfig.org/)**
+- Padronização de projeto e código: **[Eslint](https://eslint.org/)** - **[Prettier](https://prettier.io/)** - **[Commitizen](https://www.npmjs.com/package/commitizen)** - **[Commitlint](https://commitlint.js.org/)** - **[Husky](https://typicode.github.io/husky/#/)** - **[Lint-staged](https://github.com/okonet/lint-staged)** - **[EditorConfig](https://editorconfig.org/)**
 - Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
 
 ---
