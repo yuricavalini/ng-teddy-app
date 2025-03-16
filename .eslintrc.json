@@ -4,6 +4,7 @@
   "overrides": [
     {
       "files": ["*.ts"],
+      "plugins": ["unused-imports"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -12,6 +13,7 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
+        "unused-imports/no-unused-imports": "error",
         "@angular-eslint/directive-selector": [
           "error",
           {
