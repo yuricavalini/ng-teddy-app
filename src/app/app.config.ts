@@ -1,22 +1,20 @@
 import { registerLocaleData } from '@angular/common';
-import localePt from '@angular/common/locales/pt';
 import {
-  ApplicationConfig,
-  importProvidersFrom,
-  LOCALE_ID,
-  provideZoneChangeDetection,
-} from '@angular/core';
-import { provideRouter, withComponentInputBinding } from '@angular/router';
-
-import { APP_ROUTES } from './app.routes';
-import {
-  HTTP_INTERCEPTORS,
   provideHttpClient,
   withFetch,
   withInterceptorsFromDi,
 } from '@angular/common/http';
+import localePt from '@angular/common/locales/pt';
+import {
+  ApplicationConfig,
+  LOCALE_ID,
+  provideZoneChangeDetection,
+} from '@angular/core';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideToastr } from 'ngx-toastr';
+
+import { APP_ROUTES } from './app.routes';
 registerLocaleData(localePt);
 
 export const appConfig: ApplicationConfig = {
